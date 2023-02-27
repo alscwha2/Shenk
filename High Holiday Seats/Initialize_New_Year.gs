@@ -1,4 +1,10 @@
-/*
+/**
+ * @author: Aaron Schwartz-Messing
+ * @email: aron.messin@gmail.com
+ * 
+ * Please feel free to reach out if you have any questions about this script.
+ * 
+ * 
  * This script prepares the Yom Kippur signup to be used for a new year.
  * 
  * It does the following tasks:
@@ -12,6 +18,7 @@
  * 
  * If you have any questions about this system, contact Ahron Schwartz-Messing at aron.messin@gmail.com.
  */
+
 
 const SCRIPT_PROPERTIES = PropertiesService.getScriptProperties();
 const PROPERTIES = SCRIPT_PROPERTIES.getProperties();
@@ -30,7 +37,7 @@ function main() {
 
   const FORM = FormApp.openById(PROPERTIES.FORM_ID);
   const OLD_FORM_TITLE = FORM.getTitle();
-  const NEW_FORM_TITLE = `Shenk Yom Kippur Seating ${YEAR} - Women`;
+  const NEW_FORM_TITLE = `Shenk Yom Kippur Seating ${YEAR} - Men`;
 
 
   const RESPONSE_SHEET = SpreadsheetApp.getActiveSheet()
